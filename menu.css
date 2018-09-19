@@ -1,0 +1,592 @@
+/*GLOBALE STYLES*/
+
+* {
+
+    /*    border: solid 1px red;*/
+    box-sizing: border-box;
+
+}
+
+:root {
+
+    /*    farve palette*/
+    --bg_color: #A79C96;
+
+    --mycolor_brun: #736258;
+    --mycolor_sand: #DAAA70;
+    --mycolor_sandligt: #D7CABB;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg_color);
+
+
+}
+
+
+
+
+/*BURGER MENU */
+
+.burger {
+
+    width: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: fixed;
+    z-index: 6;
+    right: 0px;
+    cursor: pointer;
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+/* burger menu when clicked animation*/
+
+.change_bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change_bar2 {
+    opacity: 0;
+}
+
+.change_bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*NAV BAR STYLE AND ANIMATION*/
+
+nav {
+
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    right: -50vw;
+    background-color: var(--mycolor_brun);
+
+}
+
+.nav_in {
+
+    animation: nav_in .3s ease-in forwards;
+
+}
+
+@keyframes nav_in {
+
+    from {
+        opacity: 0;
+        right: -50vw;
+    }
+
+    to {
+        opacity: 100;
+        right: 0;
+    }
+}
+
+.nav_out {
+
+    animation: nav_out .3s ease-in forwards;
+}
+
+@keyframes nav_out {
+
+    from {
+        opacity: 100;
+        right: 0;
+    }
+
+    to {
+        opacity: 0;
+        right: -50;
+    }
+}
+
+/*NAV LINKS*/
+
+ul {
+    padding-top: 50px;
+
+
+}
+
+li {
+    font-family: anton, sans-serif;
+    color: white;
+    margin-top: 10px;
+    letter-spacing: 4px;
+}
+
+/*LOGO i menu når skærmen er større end ipad se media-Q*/
+
+.logo_menu {
+
+    background-image: url(svg/logo_simple_shadow.svg);
+    background-size: 100% 100%;
+    width: 85px;
+    height: 85px;
+    position: relative;
+    top: -40px;
+}
+
+a {
+
+    text-decoration: none;
+    color: var(--mycolor_brun);
+}
+
+/*headline & logo*/
+
+.headline_wrapper {
+
+    background-color: var(--mycolor_sand);
+    width: 100%;
+    height: 45vh;
+
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+
+    background-image: url(svg/logo_simple_shadow.svg);
+    background-size: 100% 100%;
+    border-top: solid 20px var(--mycolor_sand);
+    border-bottom: solid 20px var(--mycolor_sand);
+
+
+
+}
+
+
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: anton, sans-serif;
+    grid-area: 2 / 2;
+    font-size: 1em;
+
+    text-transform: uppercase;
+
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: anton, sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--mycolor_brun);
+
+    grid-area: 3 / 2;
+
+}
+
+
+/*SHAPE DOWN */
+
+.shape_down {
+
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 20px solid var(--mycolor_sand);
+    z-index: 0;
+}
+
+.shape_down_shadow_box {
+    position: relative;
+    top: -20px;
+    width: 100vw;
+    height: 10px;
+    z-index: -1;
+    background-color: var(--mycolor_brun);
+
+
+}
+
+.shape_down_shadow_arrow {
+    position: relative;
+    top: -20px;
+    width: 0;
+    height: 0px;
+    z-index: -2;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 20px solid var(--mycolor_brun);
+
+}
+
+/*MENU CSS*/
+
+img {
+
+    width: 100%;
+}
+
+/*Sekundær menu. Filter knapper se os JS*/
+
+.knapper {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: -3;
+
+}
+
+button {
+    justify-self: center;
+    font-size: 1.5em;
+    font-family: anton, sans-serif;
+    text-transform: capitalize;
+
+}
+
+.menu_item {
+
+
+    width: 50vw;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*DATA CONTAINER STYLE. Klones fra template og json*/
+
+.data_container {
+
+
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+
+
+}
+
+
+.ret_indhold {
+
+    width: 75vw;
+    justify-self: center;
+    background-color: var(--mycolor_sand);
+    margin: 10px;
+    font-family: roboto;
+
+
+}
+
+/* ændre farven på hvert andet element/article. skaber adskillelse*/
+
+.ret_indhold:nth-child(odd) {
+
+    background-color: var(--mycolor_sandligt);
+}
+
+/* tekst under billeder*/
+
+.billede_txt {
+    padding: 10px;
+
+}
+
+
+/*modal vidu. vises når der klikkes på en artkel.*/
+
+#modal {
+
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    text-align: left;
+    position: fixed;
+    top: 0;
+
+    display: none;
+
+    font-family: sans-serif;
+
+
+}
+
+#modal_content {
+
+
+    background-color: var(--mycolor_sandligt);
+    margin: auto;
+    position: relative;
+
+
+    padding: 10px;
+    margin: 20px;
+
+    font-family: roboto;
+}
+
+#modal.vis {
+    display: block;
+    overflow: scroll;
+
+}
+
+.modal_langbeskrivelse {
+
+    padding: 20px;
+}
+
+#modal_content button {
+
+    background-color: indianred;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-bottom-left-radius: 3%;
+
+
+}
+
+
+/*MEDIE QUERIIES*/
+
+/*IPAD */
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+
+        font-size: 6em;
+
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .data_container {
+
+
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+
+
+    }
+
+
+    .ret_indhold {
+
+        width: 45vw;
+
+        justify-self: center;
+        background-color: var(--mycolor_sand);
+        margin: 10px;
+        font-family: roboto;
+        font-size: 2em;
+
+    }
+
+    /*modal*/
+    #modal_content {
+
+
+        background-color: var(--mycolor_sandligt);
+        margin: auto;
+        position: relative;
+
+        font-size: 2em;
+        padding: 50px;
+        margin: 50px;
+
+        font-family: roboto;
+    }
+
+    #modal.vis {
+        display: block;
+        overflow: scroll;
+
+    }
+
+
+
+    #modal_content button {
+
+        width: 50px;
+        height: 65px;
+
+
+    }
+
+}
+
+
+/* i-pad horizontal & laptop*/
+
+@media only screen and (min-width: 768px) {
+
+    /*     BURGER MENU OG NAV*/
+    .burger {
+        display: none;
+    }
+
+    nav {
+
+        width: 100vw;
+        height: 120px;
+        position: static;
+        margin-top: -32px;
+        z-index: 5;
+        background-color: var(--mycolor_sandligt);
+        transition: 0s;
+        border-bottom: 10px solid var(--mycolor_brun)
+    }
+
+
+    nav ul {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    nav li {
+
+        justify-self: center;
+        color: var(--mycolor_brun);
+        text-align: left;
+        font-size: 2em;
+        list-style: none;
+    }
+
+    /*headline & logo*/
+    .headline_wrapper {
+
+        background-color: var(--mycolor_sand);
+        width: 100vw;
+        height: 35vh;
+
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: 1fr;
+
+        background-image: none;
+        border-top: none;
+        border-top: 50px solid var(--mycolor_sand);
+
+        border-bottom: 100px solid var(--mycolor_sand);
+
+    }
+
+    h1 {
+
+        font-size: 7em;
+
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .data_container {
+
+
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+
+
+    }
+
+
+    .ret_indhold {
+
+        width: 25vw;
+
+        justify-self: center;
+        background-color: var(--mycolor_sand);
+        margin: 10px;
+        font-family: roboto;
+        font-size: 1.5em;
+
+    }
+
+    /*modal*/
+    #modal_content {
+
+
+        background-color: var(--mycolor_sandligt);
+        margin: auto;
+        position: relative;
+
+        font-size: 2em;
+        margin: 50px;
+
+        font-family: roboto;
+    }
+
+    #modal.vis {
+        display: block;
+        overflow: scroll;
+
+    }
+
+
+
+    #modal_content button {
+
+        width: 50px;
+        height: 65px;
+
+
+    }
+    /*modal*/
+    #modal_content {
+
+
+        background-color: var(--mycolor_sandligt);
+        margin: auto;
+        position: relative;
+
+        font-size: 2em;
+        padding: 50px;
+        margin: 50px 200px 300px 200px;
+
+        font-family: roboto;
+    }
+
+    #modal.vis {
+        display: block;
+        overflow: scroll;
+
+    }
+
+
+
+    #modal_content button {
+
+        width: 65px;
+        height: 65px;
+
+
+    }
+
+}

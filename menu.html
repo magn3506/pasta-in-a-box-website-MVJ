@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resturent Pasta in a Box - kea mmd by mvj</title>
+
+    <link rel="stylesheet" href="menu.css">
+
+    <!--    FONTS-->
+    <!--            Anton-->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!--            ROBOTO-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--            FINGER PRINT-->
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--    templates. Templates indhold klones igennem JS og sættes ind i data_container -->
+    <template class="ret_template">
+
+       <article class="ret_indhold">
+
+                    <img class="billede" src="" alt="">
+
+                    <div class="billede_txt">
+                    <h2 class="navn"></h2>
+                    <span class="kortBeskrivelse"></span><br>
+                    Pris: <span class="pris"></span><br>
+                    <span class="oprindelsesregion"></span><br>
+                    <span class="langBeskrivelse"></span><br>
+                    </div>
+
+       </article>
+   </template>
+
+
+
+    <header>
+        <!--  burger menu symbol, når klikkes på skifter den fra 3 streger til et kryds. -->
+        <div class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!--nav bar. kommer ind når der klikkes på burger menu-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li>
+                    <a href="index.html">
+                        <div class="logo_menu"></div>
+                    </a>
+                </li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <!--headline & logo   -->
+        <div class="headline_wrapper">
+
+            <h2>welcome to</h2>
+            <h1>the menu</h1>
+
+        </div>
+
+        <!--            shape down. trekants form -->
+        <div class="shape_down"></div>
+        <div class="shape_down_shadow_box"></div>
+        <div class="shape_down_shadow_arrow"></div>
+    </header>
+
+    <!--Knapper til sekunder menu. Filtrere mellem kategorierne -->
+    <section class="knapper">
+        <button class="menu_item" data-kategori="pasta">pasta</button>
+        <button class="menu_item" data-kategori="sauce">sauce</button>
+    </section>
+
+
+    <!-- Main indhold. -->
+    <main class="container">
+
+        <!-- Her sættes data fra template og json fil ind. -->
+        <section class="data_container">
+        </section>
+
+
+    </main>
+
+
+
+    <!--    Modal Vindue. Når der klikkes på et enkelt menu element vises modal vindue med valgte element. Så JS - modal function -->
+
+    <div id="modal">
+        <div id="modal_content">
+            <button>X</button>
+            <h2 class="modal_navn"></h2>
+            <img src="" alt="" class="modal_billede">
+            <p class="modal_langbeskrivelse"> </p>
+            <p class="modal_kortbeskrivelse"> </p>
+            <p class="modal_pris"> </p>
+        </div>
+    </div>
+
+
+<!--Reference til script -->
+    <script src="sctipt.js"></script>
+</body>
+</html>
+
+

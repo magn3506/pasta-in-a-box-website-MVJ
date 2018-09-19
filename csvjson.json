@@ -1,0 +1,114 @@
+[
+  {
+    "navn": "Tagliatelle",
+    "pris": 35,
+    "kortbeskrivelse": "Pasta in narrow flat strips.",
+    "langbeskrivelse": "The texture of Tagliatelle is porous and rough, making it ideal for thick sauces, generally made with beef, veal, or pork.",
+    "billede": "Tagliatelle",
+    "kategori": "pasta"
+  },
+  {
+    "navn": "Campanelle",
+    "pris": 35,
+    "kortbeskrivelse": "A pasta shaped like a cone with ruffed edges.",
+    "langbeskrivelse": "Campanelle is the italien word for Bellflowers. Its a type of pasta which is shaped like a cone with a ruffled edge or a bell-like flower. It is intended to be served with a thich sauce or in a casserole.",
+    "billede": "campanelle",
+    "kategori": "pasta"
+  },
+  {
+    "navn": "Spaguetti",
+    "pris": 35,
+    "kortbeskrivelse": "Spaguetti is a pasta shaped like long and think strips.",
+    "langbeskrivelse": "Spaguetti is a staple food of traditional italian cuisine. Like other pasta, Spaguetti is made of milled wheat and water. Typically the pasta is white because refined flour is used, but whole wheat flour may be added.",
+    "billede": "Spaguetti",
+    "kategori": "pasta"
+  },
+  {
+    "navn": "Taglierine",
+    "pris": 35,
+    "kortbeskrivelse": "Taglierine is a type of ribbon pasta, long like Spaghetti.",
+    "langbeskrivelse": "Taglierine is a type of ribbon pasta, long like Spaghetti. Its around to two to three mm or toughly a tent of a an inch wide. It is made of egg dough, semolina, flour and salt. It is typically served with butter and truffles or meat roast sauce.",
+    "billede": "Taglierine",
+    "kategori": "pasta"
+  },
+  {
+    "navn": "Rigatone",
+    "pris": 35,
+    "kortbeskrivelse": "Rigatoni are a form of tube-shape pasta of varying lengths and diameters.",
+    "langbeskrivelse": "Rigatoni are a form of tube-shape pasta of varying lengths and diameters originating in Italy. They are larger than penne and sometimes slightly curved. It%u2019s a particular favorite pasta shape in the south of Italy, especially in Sicily. Its namesake ridges make better adhesive surfaces for sauces and grated cheese than smooth-sided pasta like ziti.",
+    "billede": "Rigatone",
+    "kategori": "pasta"
+  },
+  {
+    "navn": "Gnocchi",
+    "pris": 35,
+    "kortbeskrivelse": "Gnocchi are small and soft doughdumplings made of potato.",
+    "langbeskrivelse": "Our Gnocchi are handmade. Their preparation is similar to pasta, as they are cooked by boiling them in water and then they are served with a sauce of your choosing.",
+    "billede": "Gnocchi",
+    "kategori": "pasta"
+  },
+  {
+    "navn": "Penne",
+    "pris": 35,
+    "kortbeskrivelse": "Penne are small tube shaped pasta.",
+    "langbeskrivelse": "Penne is traditionally cooked al dente and its shape makes it particularly adapted for sauces, such as pesto.",
+    "billede": "penne",
+    "kategori": "pasta"
+  },
+  {
+    "navn": "Trapanese",
+    "pris": 45,
+    "kortbeskrivelse": "Pesto rosso, cherry tomatoes, guanciale, basil, pine nuts and\nTaggiasca olives",
+    "langbeskrivelse": "",
+    "billede": "",
+    "kategori": "sauce"
+  },
+  {
+    "navn": "Ragù antico",
+    "pris": 45,
+    "kortbeskrivelse": "Pork sausage, stracciatella cheese, tomato, pesto pearls and basil oil",
+    "langbeskrivelse": "",
+    "billede": "",
+    "kategori": "sauce"
+  },
+  {
+    "navn": "4 Formaggi",
+    "pris": 45,
+    "kortbeskrivelse": "Cream, 4 mixed cheeses",
+    "langbeskrivelse": "",
+    "billede": "",
+    "kategori": "sauce"
+  },
+  {
+    "navn": "Peperoncino e gamberi",
+    "pris": 45,
+    "kortbeskrivelse": "Garlic, olive oil, prawns and chilli",
+    "langbeskrivelse": "",
+    "billede": "",
+    "kategori": "sauce"
+  },
+  {
+    "navn": "Carbonara",
+    "pris": 45,
+    "kortbeskrivelse": "Cream and bacon",
+    "langbeskrivelse": "",
+    "billede": "",
+    "kategori": "sauce"
+  },
+  {
+    "navn": "Pesto",
+    "pris": 45,
+    "kortbeskrivelse": "Basil, pine nuts and parmigiano",
+    "langbeskrivelse": "",
+    "billede": "",
+    "kategori": "sauce"
+  },
+  {
+    "navn": "Bolognese",
+    "pris": 45,
+    "kortbeskrivelse": "Beef and pork with vegetables",
+    "langbeskrivelse": "",
+    "billede": "",
+    "kategori": "sauce"
+  }
+]
